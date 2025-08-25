@@ -13,8 +13,8 @@ const isPublicApiRoutes = createRouteMatcher([
 ])
 
 // see documentation for specific secure routes
-export default clerkMiddleware((auth, req) => {
-    const { userId } = auth();
+export default clerkMiddleware(async (auth, req) => {
+    const { userId } = await auth();
     const currentUrl = new URL(req.url);
 
     // if someone is requesting for dashboard which is also home for our project
