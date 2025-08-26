@@ -13,7 +13,6 @@ This endpoint retrieves a list of all videos from the database(postgresql), orde
 ### Request Body
 No request body is required for this endpoint.
 
----
 
 ### Example Response
 The response will be a JSON object with the following fields:
@@ -62,6 +61,8 @@ The response will be a JSON object with the following fields:
 }
 ```
 
+---
+
 ## Endpoint: `/api/image-upload`
 
 ### Description
@@ -79,8 +80,6 @@ The request must be sent as `multipart/form-data` with the following field:
 
 - `file` **(File)**: The file to be uploaded. (Required)
 
----
-
 ### Example Response
 The response will be a JSON object with the following fields:
 
@@ -95,6 +94,9 @@ The response will be a JSON object with the following fields:
   "publicId": "Next-cloudinary-images/sample_image_123"
 }
 ```
+
+---
+
 ## Endpoint: `/api/video-upload`
 
 ### Description
@@ -114,8 +116,6 @@ The request must be sent as `multipart/form-data` with the following fields:
 - `title` **(string)**: The title of the video. (Optional but recommended)  
 - `description` **(string)**: A description of the video. (Optional)  
 - `originalSize` **(string)**: The original file size of the video. (Required for metadata tracking).  
-
----
 
 ### Example Response
 The response will be a JSON object with the following fields:
@@ -148,3 +148,6 @@ The response will be a JSON object with the following fields:
     "updatedAt": "2025-08-26T10:15:30.000Z"
   }
 }
+```
+---
+
