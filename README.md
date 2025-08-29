@@ -77,6 +77,7 @@ npx prisma generate
 
 5. **Run the Development Server**
 ```bash
+cd AI-Power-SAAS-Aplication
 npm run dev
 ```
 This starts the frontend server on http://localhost:3000
