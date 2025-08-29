@@ -83,7 +83,6 @@ This starts the frontend server on http://localhost:3000
 
 
 ## Usage
-## Usage
 
 ### For Image Resizing
 
