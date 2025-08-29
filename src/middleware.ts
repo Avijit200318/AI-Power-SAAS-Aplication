@@ -5,7 +5,10 @@ const isPublicRoutes = createRouteMatcher([
     "/",
     "/home",
     "/sign-up",
-    "/sign-in"
+    "/sign-in",
+    // new one for custom signup form
+    "/sign-up-two",
+    "/sign-in-two"
 ]);
 
 const isPublicApiRoutes = createRouteMatcher([
